@@ -28,10 +28,10 @@ public class AverageSquares {
 
         double i = startNum;
 
-        while (i<(endNum+1)) {
+        do {
             sumOfSquares = sumOfSquares + (i*i);
             ++i;
-        }
+        } while (i < (endNum+1));
 
         double squareAverage = sumOfSquares/(endNum - startNum + 1);
 
